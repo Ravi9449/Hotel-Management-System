@@ -31,6 +31,7 @@ public class HotelManagementSystem extends JFrame{
         
         setVisible(true);
         
+        
         while(true){
             txt1.setVisible(false);
             try{
