@@ -26,7 +26,7 @@ public class SearchRoom extends JFrame implements ActionListener{
         add(text);
         
         JLabel lblbed = new JLabel("Bed Type");
-//        lblbed.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        lblbed.setFont(new Font("Tahoma", Font.PLAIN, 20));
         lblbed.setBounds(50, 100, 100, 20);
         add(lblbed);
         

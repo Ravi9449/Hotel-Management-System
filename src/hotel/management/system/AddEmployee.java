@@ -93,7 +93,7 @@ public class AddEmployee extends JFrame implements ActionListener{
         tfemail.setBounds(200, 330, 150, 30);
         add(tfemail);
         
-        JLabel lblaadhar = new JLabel("Aadhar");
+        JLabel lblaadhar = new JLabel("Social Security");
         lblaadhar.setBounds(60, 380, 120, 30);
         lblaadhar.setFont(new Font("Tahoma", Font.PLAIN, 17));
         add(lblaadhar);

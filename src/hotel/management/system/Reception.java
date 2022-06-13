@@ -7,7 +7,7 @@ import java.awt.event.*;
 
 public class Reception extends JFrame implements ActionListener{
     
-    JButton newCustomer, rooms, department, allEmployee, manager, customers, searchRoom, update;
+    JButton newCustomer, rooms, department, allEmployee, manager, customers, searchRoom, update, roomStatus, checkout;
     Reception(){
         
         getContentPane().setBackground(Color.WHITE);
@@ -49,9 +49,10 @@ public class Reception extends JFrame implements ActionListener{
         manager.addActionListener(this);
         add(manager);
         
-        JButton checkout = new JButton("Checkout"); 
+        checkout = new JButton("Checkout"); 
         checkout.setBounds(10, 270, 200, 30);
         checkout.setForeground(Color.BLUE);
+        checkout.addActionListener(this);
         add(checkout);
         
         update = new JButton("Update Status"); 
@@ -60,24 +61,20 @@ public class Reception extends JFrame implements ActionListener{
         update.addActionListener(this);
         add(update);
         
-        JButton roomStatus = new JButton("Update Room Status"); 
+        roomStatus = new JButton("Update Room Status"); 
         roomStatus.setBounds(10, 350, 200, 30);
         roomStatus.setForeground(Color.BLUE);
+        roomStatus.addActionListener(this);
         add(roomStatus);
         
-        JButton pickup = new JButton("Pick Up Service"); 
-        pickup.setBounds(10, 390, 200, 30);
-        pickup.setForeground(Color.BLUE);
-        add(pickup);
-        
         searchRoom = new JButton("Search Rooms"); 
-        searchRoom.setBounds(10, 430, 200, 30);
+        searchRoom.setBounds(10, 390, 200, 30);
         searchRoom.setForeground(Color.BLUE);
         searchRoom.addActionListener(this);
         add(searchRoom);
         
         JButton logout = new JButton("Logout"); 
-        logout.setBounds(10, 470, 200, 30);
+        logout.setBounds(10, 430, 200, 30);
         logout.setForeground(Color.BLUE);
         add(logout);
         
@@ -117,6 +114,12 @@ public class Reception extends JFrame implements ActionListener{
     } else if (ae.getSource() == update){
             setVisible(false);
             new UpdateCheck();
+    } else if (ae.getSource() == roomStatus){
+        setVisible(false);
+        new UpdateRoom();
+    } else if (ae.getSource() == checkout){
+        setVisible(false);
+        new Checkout();
     }
     }
     

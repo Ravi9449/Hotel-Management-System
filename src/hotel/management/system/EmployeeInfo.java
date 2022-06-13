@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package hotel.management.system;
 
 import javax.swing.*;
@@ -11,10 +8,6 @@ import java.sql.*;
 import net.proteanit.sql.*;
 
 
-/**
- *
- * @author ravi
- */
 
 
 
@@ -28,22 +21,17 @@ public class EmployeeInfo extends JFrame implements ActionListener{
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
         
-        
-        
-//        Jlabel l1 = new JLabel("Room Number");
-//        l1.setBounds(10, 10, 100, 20);
-//        add(l1);
 
         JLabel l1 = new JLabel("Name");
-        l1.setBounds(0, 10, 100, 20);
+        l1.setBounds(40, 10, 100, 20);
         add(l1);
         
         JLabel l2 = new JLabel("Age");
-        l2.setBounds(120, 10, 100, 20);
+        l2.setBounds(170, 10, 100, 20);
         add(l2);
         
         JLabel l3 = new JLabel("Gender");
-        l3.setBounds(250, 10, 100, 20);
+        l3.setBounds(290, 10, 100, 20);
         add(l3);
         
         JLabel l4 = new JLabel("Job");
@@ -82,7 +70,7 @@ public class EmployeeInfo extends JFrame implements ActionListener{
         back.setBackground(Color.WHITE);
         back.setForeground(Color.BLACK);
         back.addActionListener(this);
-        back.setBounds(440, 500, 120, 30);
+        back.setBounds(420, 500, 120, 30);
         add(back);
         
         setBounds(300, 200, 1000, 600);

@@ -47,10 +47,6 @@ public class Dashboard extends JFrame implements ActionListener{
         addrooms.addActionListener(this);
         admin.add(addrooms);
         
-        JMenuItem adddrivers = new JMenuItem("Add Drivers");
-        adddrivers.addActionListener(this);
-        admin.add(adddrivers);
-        
         setVisible(true);
         
         

@@ -20,7 +20,7 @@ public class UpdateRoom extends JFrame implements ActionListener{
         
         JLabel text = new JLabel("Update Room Status");
         text.setFont(new Font("Tahoma", Font.PLAIN, 20));
-        text.setBounds(90, 20, 200, 30);
+        text.setBounds(30, 20, 250, 30);
         add(text);
         
         ccustomer = new Choice();
@@ -52,7 +52,7 @@ public class UpdateRoom extends JFrame implements ActionListener{
         add(tfroom);
         
         
-        JLabel lblavailable = new JLabel("Available");
+        JLabel lblavailable = new JLabel("Availablility");
         lblavailable.setBounds(30, 160, 100, 20);
         add(lblavailable);
         
@@ -144,7 +144,7 @@ public class UpdateRoom extends JFrame implements ActionListener{
             
             try{
                 Conn c = new Conn();
-                c.s.executeUpdate("update customer set availability = '"+available+"',cleaning_status = '"+status+"' where roomnumber = '"+room+ "'");
+                c.s.executeUpdate("update room set availability = '"+available+"',cleaning_status = '"+status+"' where roomnumber = '"+room+ "'");
                 
                 JOptionPane.showMessageDialog(null, "Data Update Successfully");
                 

@@ -89,7 +89,7 @@ public class AddDriver extends JFrame implements ActionListener{
         tflocation.setBounds(200, 310, 150, 30);
         add(tflocation);
         
-        add = new JButton("Add Room");
+        add = new JButton("Add Driver");
         add.setBackground(Color.BLACK);
         add.addActionListener(this);
         add.setBounds(60, 350, 130, 30);
