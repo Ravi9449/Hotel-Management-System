@@ -6,6 +6,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class Dashboard extends JFrame implements ActionListener{
+    
     Dashboard(){
         setBounds(0, 0, 1550, 1000);
         setLayout(null);
@@ -28,7 +29,6 @@ public class Dashboard extends JFrame implements ActionListener{
         image.add(mb);
         
         JMenu hotel = new JMenu("Hotel Management");
-        //hotel.setForeground(Color.RED);
         mb.add(hotel);
         
         JMenuItem reception = new JMenuItem("RECEPTION");

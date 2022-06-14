@@ -12,7 +12,7 @@ public class HotelManagementSystem extends JFrame implements ActionListener {
         setBounds(100, 100, 1366, 565);
         setLayout(null);
         
-        ImageIcon img1 = new ImageIcon(ClassLoader.getSystemResource("icons/splash.jpeg"));
+        ImageIcon img1 = new ImageIcon(ClassLoader.getSystemResource("icons/splash_1.jpeg"));
         JLabel image = new JLabel(img1);
         image.setBounds(0, 0, 1366, 565);
         add(image);

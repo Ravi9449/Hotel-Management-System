@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package hotel.management.system;
 
 import javax.swing.*;
@@ -9,14 +6,6 @@ import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
 import net.proteanit.sql.*;
-
-
-/**
- *
- * @author ravi
- */
-
-
 
 public class CustomerInfo extends JFrame implements ActionListener{
     
@@ -28,11 +17,7 @@ public class CustomerInfo extends JFrame implements ActionListener{
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
         
-        
-        
-//        Jlabel l1 = new JLabel("Room Number");
-//        l1.setBounds(10, 10, 100, 20);
-//        add(l1);
+
 
         JLabel l1 = new JLabel("Document Type");
         l1.setBounds(0, 10, 100, 20);
