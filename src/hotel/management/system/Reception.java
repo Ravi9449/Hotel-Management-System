@@ -79,9 +79,9 @@ public class Reception extends JFrame implements ActionListener{
         logout.addActionListener(this);
         add(logout);
         
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/First.jpeg"));
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/rep.jpeg"));
         JLabel image = new JLabel(i1);
-        image.setBounds(250, 30, 500, 470);
+        image.setBounds(150, 20, 800, 470);
         add(image);
         
         setBounds(350, 200, 800, 570);

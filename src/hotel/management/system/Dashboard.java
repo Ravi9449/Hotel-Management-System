@@ -11,17 +11,17 @@ public class Dashboard extends JFrame implements ActionListener{
         setBounds(0, 0, 1550, 1000);
         setLayout(null);
         
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/First.jpeg"));
-        Image i2 = i1.getImage().getScaledInstance(1550, 1000, Image.SCALE_DEFAULT);
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/Main.jpeg"));
+        Image i2 = i1.getImage().getScaledInstance(1550, 1000, Image.SCALE_FAST);
         ImageIcon i3= new ImageIcon(i2);
         JLabel image = new JLabel(i3);
         image.setBounds(0, 0, 1550, 1000);
         add(image);
         
-        JLabel text = new JLabel("Naidu's Hotel");
+        JLabel text = new JLabel("The Majestic Palace");
         text.setBounds(1000, 80, 1000, 50);
         text.setFont(new Font("Tahoma",Font.PLAIN, 46));
-        text.setForeground(Color.BLUE);
+        text.setForeground(Color.DARK_GRAY);
         image.add(text);
         
         JMenuBar mb = new JMenuBar();

@@ -14,17 +14,18 @@ public class HotelManagementSystem extends JFrame implements ActionListener {
         
         ImageIcon img1 = new ImageIcon(ClassLoader.getSystemResource("icons/splash_1.jpeg"));
         JLabel image = new JLabel(img1);
-        image.setBounds(0, 0, 1366, 565);
+        image.setBounds(0, -20, 1300, 565);
         add(image);
         
-        JLabel txt1 = new JLabel("Hotel Management System");
-        txt1.setBounds(20, 430, 500, 90);
+        JLabel txt1 = new JLabel("Welcome's You!");
+        txt1.setBounds(480, 250, 500, 90);
         txt1.setForeground(Color.WHITE);
-        txt1.setFont(new Font("serif", Font.PLAIN, 20));
+        txt1.setFont(new Font("serif", Font.PLAIN, 48));
         image.add(txt1);
         
+        
         JButton next = new JButton("Next");
-        next.setBounds(1150, 450, 150, 50);
+        next.setBounds(1000, 450, 150, 50);
         next.setBackground(Color.BLUE);
         next.setForeground(Color.BLACK);
         next.addActionListener(this);
@@ -32,7 +33,6 @@ public class HotelManagementSystem extends JFrame implements ActionListener {
         image.add(next);
         
         setVisible(true);
-        
         
         while(true){
             txt1.setVisible(false);

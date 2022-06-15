@@ -86,9 +86,9 @@ public class AddRooms extends JFrame implements ActionListener{
         cancel.setBounds(220, 350, 130, 30);
         add(cancel);
         
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/First.jpeg"));
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/1room.jpeg"));
         JLabel image = new JLabel(i1);
-        image.setBounds(400, 30, 500, 300);
+        image.setBounds(400, 10, 450, 450);
         add(image);
                 
         setBounds(330, 200, 940, 470);
